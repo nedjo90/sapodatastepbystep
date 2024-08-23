@@ -65,17 +65,17 @@
 		6. Test `{URL}$metadata`![[metadata]]
 		7. To see errors use the service `/n/IWFND/ERROR_LOG`
 	3. Pulling Data:
-		1. `{URL}POHeaderSet` (internal table) ![[Get before method implementation]]
+		1. `{URL}POHeaderSet` (internal table) ![[Get_before_method_implementation]]
 		2. Implement Method:
 			1. Go to `SEGW`
 			2. Right click on `Service Implementation/{POHeaderSet}`
 			3. Click on `Go to ABAP Workbench` & ![[Validate.png]]
 			4. Right click on `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` & `Redfine`
 			5. Save & Activate (F3)
-			6. Test again the query `{URL}POHeaderSet` (internal table) : ![[Get after method implementation]]
+			6. Test again the query `{URL}POHeaderSet` (internal table) : ![[Get_after_method_implementation]]
 			7. Enter a method to pull data
 			8. save & activate
-			9. Test again the query `{URL}POHeaderSet` (internal table) : ![[Get after method implementation and populate table]]
-			10. Understand OData URL ![[OData URL]]
+			9. Test again the query `{URL}POHeaderSet` (internal table) : ![[Get_after_method_implementation_and_populate_table]]
+			10. Understand OData URL ![[OData_URL]]
 
 

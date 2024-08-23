@@ -89,4 +89,4 @@
         9. Test again the query `{URL}POHeaderSet` (internal table)
             [Get after method implementation and populate table](Get_after_method_implementation_and_populate_table) <!-- Note located in the root directory -->
         10. Understand OData URL
-            [OData URL](OData_URL) <!-- Note located in the root directory -->
+            [OData\ URL.md](OData_URL) <!-- Note located in the root directory -->
