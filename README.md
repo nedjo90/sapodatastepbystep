@@ -67,9 +67,9 @@
         1. In `SAP Gateway Client` click on `HTTP` to see the URL
             1. => ==CASE SENSITIVE==
     4. Test `{URL}?$format=xml`
-        ![format=xml](format=xml) <!-- Note located in the root directory -->
+        ![format=xml.md](format=xml) <!-- Note located in the root directory -->
     5. Test `{URL}?$format=json`
-        ![format=json](format=json) <!-- Note located in the root directory -->
+        ![format=json.md](format=json) <!-- Note located in the root directory -->
     6. Test `{URL}$metadata`
         ![metadata](metadata) <!-- Note located in the root directory -->
     7. To see errors use the service `/n/IWFND/ERROR_LOG`
