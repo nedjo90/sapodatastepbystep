@@ -17,7 +17,7 @@
             2. Enter `Entity Type Name` = `POHeader` (Structure)
             3. Check on `Create Related Entity Set`
             4. `Entity Set Name` = `POHeaderSet` (Internal Table)
-            ![SEGW4](images/SEGW4.jpg) <!-- Image located in the 'images' folder -->
+            ![SEGW4](images/SEGW4.jpg)
             5. Operations or Methods => triggered by endpoints
             6. Define fields of the structure (work area) and internal table:
                 1. Double click on `/Data Model/Entity Types/POHeader/Properties`
@@ -43,7 +43,6 @@
 1. Hit ![Generate Runtime Object](images/Generate_Runtime_Object.png) (Generate Runtime Object) => Generation of the class for the:
     - MPC (Model Provider Class) => define the Gateway Service interface
     - DPC (Data Provider Class) => provides the Gateway Service functionalities
-      => MPC & DPC are not connected by any coding => talk via Configuration
     - Service Registration => Technical Service which the external system needs to call
 2. Provide Package and Transport
 3. Save (i.e. local storage)
@@ -57,7 +56,7 @@
         3. Click on Register
         4. `System Alias` = `LOCAL` (i.e)
         5. `Creation Information -> Package Assignment` = `Local Object` (i.e)
-        6. Hit ![Validate](images/Validate.png) <!-- Image located in the 'images' folder -->
+        6. Hit ![Validate](images/Validate.png)
     2. **Non-Embedded Deployment**
         1. To complete
 2. **Test the Service:**
@@ -67,26 +66,26 @@
         1. In `SAP Gateway Client` click on `HTTP` to see the URL
             1. => ==CASE SENSITIVE==
     4. Test `{URL}?$format=xml`
-        [format=xml.md](format=xml) <!-- Note located in the root directory -->
+        [format=xml](https://github.com/nedjo90/sapodatastepbystep/blob/main/format%20xml.md)
     5. Test `{URL}?$format=json`
-        [format=json.md](format=json) <!-- Note located in the root directory -->
+        [format=json](https://github.com/nedjo90/sapodatastepbystep/blob/main/format%20json.md)
     6. Test `{URL}$metadata`
-        [metadata](metadata) <!-- Note located in the root directory -->
+        [metadata](https://github.com/nedjo90/sapodatastepbystep/blob/main/metadata.md)
     7. To see errors use the service `/n/IWFND/ERROR_LOG`
 3. **Pulling Data:**
     1. `{URL}POHeaderSet` (internal table)
-        [Get before method implementation](Get_before_method_implementation) <!-- Note located in the root directory -->
+        [Get before method implementation](https://github.com/nedjo90/sapodatastepbystep/blob/main/Get_before_method_implementation.md)
     2. **Implement Method:**
         1. Go to `SEGW`
         2. Right click on `Service Implementation/{POHeaderSet}`
-        3. Click on `Go to ABAP Workbench` & ![Validate](images/Validate.png) <!-- Image located in the 'images' folder -->
+        3. Click on `Go to ABAP Workbench` & ![Validate](images/Validate.png)
         4. Right click on `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` & `Redfine`
         5. Save & Activate (F3)
         6. Test again the query `{URL}POHeaderSet` (internal table)
-            [Get after method implementation](Get_after_method_implementation) <!-- Note located in the root directory -->
+            [Get after method implementation](https://github.com/nedjo90/sapodatastepbystep/blob/main/Get_after_method_implementation.md)
         7. Enter a method to pull data
         8. Save & activate
         9. Test again the query `{URL}POHeaderSet` (internal table)
-            [Get after method implementation and populate table](Get_after_method_implementation_and_populate_table) <!-- Note located in the root directory -->
+            [Get after method implementation and populate table](https://github.com/nedjo90/sapodatastepbystep/blob/main/Get_after_method_implementation_and_populate_table.md)
         10. Understand OData URL
-            [OData\ URL.md](OData_URL) <!-- Note located in the root directory -->
+            [OData URL](https://github.com/nedjo90/sapodatastepbystep/blob/main/OData%20URL.md)
