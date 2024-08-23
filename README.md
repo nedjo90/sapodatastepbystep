@@ -11,20 +11,20 @@
         2. `Service Implementation`
         3. `Runtime Artifacts`
         4. `Service Maintenance`
-    4. Create structure with his internal table:
+    4. Create structure with its internal table:
         1. With fields One By One
             1. Right click on `Entity Types` -> `Create`
             2. Enter `Entity Type Name` = `POHeader` (Structure)
             3. Check on `Create Related Entity Set`
             4. `Entity Set Name` = `POHeaderSet` (Internal Table)
-            ![Entity Set](images/SEGW4.jpg) <!-- Lien vers l'image SEGW4.jpg -->
+            ![SEGW4](images/SEGW4.jpg) <!-- Image located in the 'images' folder -->
             5. Operations or Methods => triggered by endpoints
             6. Define fields of the structure (work area) and internal table:
                 1. Double click on `/Data Model/Entity Types/POHeader/Properties`
                 2. Create field
                     1. Add field name
                     2. Add Type in `Edm Core Type`
-                    3. Add Length in `Max` 
+                    3. Add Length in `Max`
                 3. Complete others configurations if needed
         2. With fields using DDIC Structure
             1. Right click on `/Data Model` -> `Import` -> `DDIC Structure`
@@ -57,7 +57,7 @@
         3. Click on Register
         4. `System Alias` = `LOCAL` (i.e)
         5. `Creation Information -> Package Assignment` = `Local Object` (i.e)
-        6. Hit ![Validate](images/Validate.png) <!-- Lien vers l'image Validate.png -->
+        6. Hit ![Validate](images/Validate.png) <!-- Image located in the 'images' folder -->
     2. **Non-Embedded Deployment**
         1. To complete
 2. **Test the Service:**
@@ -67,26 +67,26 @@
         1. In `SAP Gateway Client` click on `HTTP` to see the URL
             1. => ==CASE SENSITIVE==
     4. Test `{URL}?$format=xml`
-        ![Format XML](images/format_xml.png) <!-- Lien vers l'image format_xml.png -->
+        ![format=xml](format=xml) <!-- Note located in the root directory -->
     5. Test `{URL}?$format=json`
-        ![Format JSON](images/format_json.png) <!-- Lien vers l'image format_json.png -->
+        ![format=json](format=json) <!-- Note located in the root directory -->
     6. Test `{URL}$metadata`
-        ![Metadata](images/metadata.png) <!-- Lien vers l'image metadata.png -->
+        ![metadata](metadata) <!-- Note located in the root directory -->
     7. To see errors use the service `/n/IWFND/ERROR_LOG`
 3. **Pulling Data:**
     1. `{URL}POHeaderSet` (internal table)
-        ![Get Before Method Implementation](images/Get_before_method_implementation.png) <!-- Lien vers l'image Get_before_method_implementation.png -->
+        ![Get before method implementation](Get_before_method_implementation) <!-- Note located in the root directory -->
     2. **Implement Method:**
         1. Go to `SEGW`
         2. Right click on `Service Implementation/{POHeaderSet}`
-        3. Click on `Go to ABAP Workbench` & ![Validate](images/Validate.png) <!-- Lien vers l'image Validate.png -->
+        3. Click on `Go to ABAP Workbench` & ![Validate](images/Validate.png) <!-- Image located in the 'images' folder -->
         4. Right click on `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` & `Redfine`
         5. Save & Activate (F3)
         6. Test again the query `{URL}POHeaderSet` (internal table)
-            ![Get After Method Implementation](images/Get_after_method_implementation.png) <!-- Lien vers l'image Get_after_method_implementation.png -->
+            ![Get after method implementation](Get_after_method_implementation) <!-- Note located in the root directory -->
         7. Enter a method to pull data
         8. Save & activate
         9. Test again the query `{URL}POHeaderSet` (internal table)
-            ![Get After Method Implementation and Populate Table](images/Get_after_method_implementation_and_populate_table.png) <!-- Lien vers l'image Get_after_method_implementation_and_populate_table.png -->
+            ![Get after method implementation and populate table](Get_after_method_implementation_and_populate_table) <!-- Note located in the root directory -->
         10. Understand OData URL
-            ![OData URL](images/OData_URL.png) <!-- Lien vers l'image OData_URL.png -->
+            ![OData URL](OData_URL) <!-- Note located in the root directory -->
