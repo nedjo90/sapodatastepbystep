@@ -67,15 +67,15 @@
         1. In `SAP Gateway Client` click on `HTTP` to see the URL
             1. => ==CASE SENSITIVE==
     4. Test `{URL}?$format=xml`
-        ![format=xml.md](format=xml) <!-- Note located in the root directory -->
+        [format=xml.md](format=xml) <!-- Note located in the root directory -->
     5. Test `{URL}?$format=json`
-        ![format=json.md](format=json) <!-- Note located in the root directory -->
+        [format=json.md](format=json) <!-- Note located in the root directory -->
     6. Test `{URL}$metadata`
-        ![metadata](metadata) <!-- Note located in the root directory -->
+        [metadata](metadata) <!-- Note located in the root directory -->
     7. To see errors use the service `/n/IWFND/ERROR_LOG`
 3. **Pulling Data:**
     1. `{URL}POHeaderSet` (internal table)
-        ![Get before method implementation](Get_before_method_implementation) <!-- Note located in the root directory -->
+        [Get before method implementation](Get_before_method_implementation) <!-- Note located in the root directory -->
     2. **Implement Method:**
         1. Go to `SEGW`
         2. Right click on `Service Implementation/{POHeaderSet}`
@@ -83,10 +83,10 @@
         4. Right click on `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` & `Redfine`
         5. Save & Activate (F3)
         6. Test again the query `{URL}POHeaderSet` (internal table)
-            ![Get after method implementation](Get_after_method_implementation) <!-- Note located in the root directory -->
+            [Get after method implementation](Get_after_method_implementation) <!-- Note located in the root directory -->
         7. Enter a method to pull data
         8. Save & activate
         9. Test again the query `{URL}POHeaderSet` (internal table)
-            ![Get after method implementation and populate table](Get_after_method_implementation_and_populate_table) <!-- Note located in the root directory -->
+            [Get after method implementation and populate table](Get_after_method_implementation_and_populate_table) <!-- Note located in the root directory -->
         10. Understand OData URL
-            ![OData URL](OData_URL) <!-- Note located in the root directory -->
+            [OData URL](OData_URL) <!-- Note located in the root directory -->
