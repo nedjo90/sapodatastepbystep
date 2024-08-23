@@ -1,6 +1,6 @@
 # Summary
 
- RESOURCE => [Zapyard](https://www.zapyard.com/) => HIGHLY RECOMMANDED
+ RESOURCE => [Zapyard](https://www.zapyard.com/) <= HIGHLY RECOMMANDED
 
 [See my public postman workspace](https://www.postman.com/research-geologist-26756209/workspace/learn-odata-with-sap/request/37839180-e951e2c2-4ad7-47e8-8b71-11069368b2a7): fork it, fill the global variables in postman and test it !
 
