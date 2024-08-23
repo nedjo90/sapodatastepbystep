@@ -1,91 +1,103 @@
-# Define Data Model
+# Table des Matières
+
+1. [Définir le Modèle de Données](#define-data-model)
+2. [Implémenter / Enregistrer le Service](#implement-register-the-service)
+3. [Ajouter le Service au Catalogue de Services](#add-service-to-service-catalog)
+4. [Dépannage](#dépannage)
+5. [Contribution](#contribution)
+6. [Licence](#licence)
+
+---
+
+# Définir le Modèle de Données
 
 1. **T-CODE** `SEGW`
-2. **Create Project**:
+2. **Créer un Projet**:
     1. `Project` = `ZGW_MYPROJECT_PO_USERNAME`
     2. `Description` = `Service for PO`
-    3. Click `Local Object` => Project Create with 4 folders:
+    3. Cliquez sur `Objet Local` => Créez un projet avec 4 dossiers :
         1. `Data Model`:
             1. `Entity Types` => structure (work area = one row)
             2. `Entity Set` => internal table (more than one entity/rows)
         2. `Service Implementation`
         3. `Runtime Artifacts`
         4. `Service Maintenance`
-    4. Create structure with its internal table:
-        1. With fields One By One
-            1. Right click on `Entity Types` -> `Create`
-            2. Enter `Entity Type Name` = `POHeader` (Structure)
-            3. Check on `Create Related Entity Set`
+    4. Créez une structure avec son tableau interne :
+        1. Avec des champs un par un
+            1. Clic droit sur `Entity Types` -> `Create`
+            2. Entrez `Entity Type Name` = `POHeader` (Structure)
+            3. Cochez `Create Related Entity Set`
             4. `Entity Set Name` = `POHeaderSet` (Internal Table)
-            ![SEGW4](images/SEGW4.jpg)
-            5. Operations or Methods => triggered by endpoints
-            6. Define fields of the structure (work area) and internal table:
-                1. Double click on `/Data Model/Entity Types/POHeader/Properties`
-                2. Create field
-                    1. Add field name
-                    2. Add Type in `Edm Core Type`
-                    3. Add Length in `Max`
-                3. Complete others configurations if needed
-        2. With fields using DDIC Structure
-            1. Right click on `/Data Model` -> `Import` -> `DDIC Structure`
+            ![SEGW4](images/SEGW4.jpg) <!-- Image située dans le dossier 'images' -->
+            5. Opérations ou Méthodes => déclenchées par des points de terminaison
+            6. Définir les champs de la structure (work area) et du tableau interne :
+                1. Double-cliquez sur `/Data Model/Entity Types/POHeader/Properties`
+                2. Créez un champ
+                    1. Ajoutez le nom du champ
+                    2. Ajoutez le Type dans `Edm Core Type`
+                    3. Ajoutez la Longueur dans `Max`
+                3. Complétez les autres configurations si nécessaire
+        2. Avec des champs en utilisant la Structure DDIC
+            1. Clic droit sur `/Data Model` -> `Import` -> `DDIC Structure`
             2. `Name` = `POHeader` (Structure)
-            3. Check on `Entity Type`
-            4. `ABAP Structure` = `EKKO` (i.e.)
-            5. Check on `Create Default Entity Set` (Create default relative internal table)
-            6. Hit `Next`
-            7. Select the desired fields
-            8. Hit `Next`
-            9. Select the `Is Key`
-            10. Hit `Finish`
+            3. Cochez `Entity Type`
+            4. `ABAP Structure` = `EKKO` (par exemple)
+            5. Cochez `Create Default Entity Set` (Créer un tableau interne par défaut relatif)
+            6. Cliquez sur `Next`
+            7. Sélectionnez les champs souhaités
+            8. Cliquez sur `Next`
+            9. Sélectionnez `Is Key`
+            10. Cliquez sur `Finish`
 
-# Implement / Register the Service
+# Implémenter / Enregistrer le Service
 
-1. Hit ![Generate Runtime Object](images/Generate_Runtime_Object.png) (Generate Runtime Object) => Generation of the class for the:
-    - MPC (Model Provider Class) => define the Gateway Service interface
-    - DPC (Data Provider Class) => provides the Gateway Service functionalities
-    - Service Registration => Technical Service which the external system needs to call
-2. Provide Package and Transport
-3. Save (i.e. local storage)
+1. Cliquez sur ![Generate Runtime Object](images/Generate_Runtime_Object.png) (Générer l'objet runtime) => Génération de la classe pour :
+    - MPC (Model Provider Class) => définit l'interface du service Gateway
+    - DPC (Data Provider Class) => fournit les fonctionnalités du service Gateway
+      => MPC & DPC ne sont pas connectés par un codage => communication via Configuration
+    - Enregistrement du Service => Service technique que le système externe doit appeler
+2. Fournir le Package et le Transport
+3. Sauvegarder (par exemple, stockage local)
 
-# Add Service to Service Catalog (Register the Service to Gateway Hub)
+# Ajouter le Service au Catalogue de Services
 
-1. **Deployment**
-    1. **Embedded Deployment**
-        1. Click on `/Service Maintenance/{name of the service}`
-        2. Select the system to activate
-        3. Click on Register
-        4. `System Alias` = `LOCAL` (i.e)
-        5. `Creation Information -> Package Assignment` = `Local Object` (i.e)
-        6. Hit ![Validate](images/Validate.png)
-    2. **Non-Embedded Deployment**
-        1. To complete
-2. **Test the Service:**
-    1. Click on `Maintain` (t-code: `/n/IWFND/MAINT_SERVICE`) and `Yes`
-    2. Click on the service to test
-    3. Click on `Call Browser` or `SAP Gateway Client` (t-code: `/n/IWFND/GW_CLIENT`)
-        1. In `SAP Gateway Client` click on `HTTP` to see the URL
-            1. => ==CASE SENSITIVE==
-    4. Test `{URL}?$format=xml`
-        [format=xml](https://github.com/nedjo90/sapodatastepbystep/blob/main/format%20xml.md)
-    5. Test `{URL}?$format=json`
-        [format=json](https://github.com/nedjo90/sapodatastepbystep/blob/main/format%20json.md)
-    6. Test `{URL}$metadata`
-        [metadata](https://github.com/nedjo90/sapodatastepbystep/blob/main/metadata.md)
-    7. To see errors use the service `/n/IWFND/ERROR_LOG`
-3. **Pulling Data:**
-    1. `{URL}POHeaderSet` (internal table)
-        [Get before method implementation](https://github.com/nedjo90/sapodatastepbystep/blob/main/Get_before_method_implementation.md)
-    2. **Implement Method:**
-        1. Go to `SEGW`
-        2. Right click on `Service Implementation/{POHeaderSet}`
-        3. Click on `Go to ABAP Workbench` & ![Validate](images/Validate.png)
-        4. Right click on `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` & `Redfine`
-        5. Save & Activate (F3)
-        6. Test again the query `{URL}POHeaderSet` (internal table)
-            [Get after method implementation](https://github.com/nedjo90/sapodatastepbystep/blob/main/Get_after_method_implementation.md)
-        7. Enter a method to pull data
-        8. Save & activate
-        9. Test again the query `{URL}POHeaderSet` (internal table)
-            [Get after method implementation and populate table](https://github.com/nedjo90/sapodatastepbystep/blob/main/Get_after_method_implementation_and_populate_table.md)
-        10. Understand OData URL
-            [OData URL](https://github.com/nedjo90/sapodatastepbystep/blob/main/OData%20URL.md)
+1. **Déploiement**
+    1. **Déploiement Intégré**
+        1. Cliquez sur `/Service Maintenance/{nom du service}`
+        2. Sélectionnez le système à activer
+        3. Cliquez sur Enregistrer
+        4. `System Alias` = `LOCAL` (par exemple)
+        5. `Creation Information -> Package Assignment` = `Local Object` (par exemple)
+        6. Cliquez sur ![Validate](images/Validate.png) <!-- Image située dans le dossier 'images' -->
+    2. **Déploiement Non Intégré**
+        1. À compléter
+2. **Tester le Service :**
+    1. Cliquez sur `Maintain` (t-code : `/n/IWFND/MAINT_SERVICE`) et `Yes`
+    2. Cliquez sur le service à tester
+    3. Cliquez sur `Call Browser` ou `SAP Gateway Client` (t-code : `/n/IWFND/GW_CLIENT`)
+        1. Dans `SAP Gateway Client`, cliquez sur `HTTP` pour voir l'URL
+            1. => ==Sensible à la casse==
+    4. Testez `{URL}?$format=xml`
+        [format=xml](format=xml.md)
+    5. Testez `{URL}?$format=json`
+        [format=json](format=json.md)
+    6. Testez `{URL}$metadata`
+        [metadata](metadata.md)
+    7. Pour voir les erreurs, utilisez le service `/n/IWFND/ERROR_LOG`
+3. **Extraction des Données :**
+    1. `{URL}POHeaderSet` (tableau interne)
+        [Get before method implementation](Get_before_method_implementation.md)
+    2. **Implémenter la Méthode :**
+        1. Allez dans `SEGW`
+        2. Clic droit sur `Service Implementation/{POHeaderSet}`
+        3. Cliquez sur `Go to ABAP Workbench` & ![Validate](images/Validate.png) <!-- Image située dans le dossier 'images' -->
+        4. Clic droit sur `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` & `Redfine`
+        5. Sauvegardez & Activez (F3)
+        6. Testez à nouveau la requête `{URL}POHeaderSet` (tableau interne)
+            [Get after method implementation](Get_after_method_implementation.md)
+        7. Entrez une méthode pour extraire des données
+        8. Sauvegardez & activez
+        9. Testez à nouveau la requête `{URL}POHeaderSet` (tableau interne)
+            [Get after method implementation and populate table](Get_after_method_implementation_and_populate_table.md)
+        10. Comprendre l'URL OData
+            [OData URL](OData_URL.md)
