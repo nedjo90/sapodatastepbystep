@@ -79,4 +79,3 @@
 			10. Understand OData URL ![[OData URL]]
 
 
-
