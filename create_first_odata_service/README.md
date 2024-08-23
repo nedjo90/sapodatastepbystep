@@ -1,9 +1,10 @@
 # Table of Contents
 
-1. [Define Data Model](../#define-data-model)
-2. [Implement / Register the Service](../#implement--register-the-service)
-3. [Add Service to Service Catalog](../#add-service-to-service-catalog)
-4. [Pulling Data](../#pulling-data)
+- [Table of Contents](#table-of-contents)
+- [Define Data Model](#define-data-model)
+- [Implement / Register the Service](#implement--register-the-service)
+- [Add Service to Service Catalog](#add-service-to-service-catalog)
+- [Pulling Data](#pulling-data)
 
 ---
 
@@ -27,7 +28,7 @@
                 - **Entity Type Name**: `POHeader` (Structure)
                 - Check `Create Related Entity Set`
                 - **Entity Set Name**: `POHeaderSet` (Internal Table)
-                - ![SEGW4](../images/SEGW4.jpg)
+                - ![SEGW4](images/SEGW4.jpg)
                 - Define fields for the structure and internal table:
                     - Double-click `/Data Model/Entity Types/POHeader/Properties`
                     - Create a field by adding:
@@ -48,7 +49,7 @@
 # Implement / Register the Service
 
 1. **Generate Runtime Objects**:
-    - Click ![Generate Runtime Object](../images/Generate_Runtime_Object.png) to generate the classes:
+    - Click ![Generate Runtime Object](images/Generate_Runtime_Object.png) to generate the classes:
         - **MPC** (Model Provider Class) = Defines the Gateway Service interface
         - **DPC** (Data Provider Class) = Provides Gateway Service functionalities
         - **Service Registration** = Technical service for external systems
@@ -64,7 +65,7 @@
         - Click `Register`
         - **System Alias**: `LOCAL` (example)
         - **Creation Information -> Package Assignment**: `Local Object` (example)
-        - Click ![Validate](../images/Validate.png)
+        - Click ![Validate](images/Validate.png)
     2. **Non-Embedded Deployment**:
         - To be completed
 2. **Test the Service**:
@@ -74,29 +75,29 @@
         - In `SAP Gateway Client`, click `HTTP` to view the URL
             - Note: **CASE SENSITIVE**
     4. **Test URLs**:
-        - `{URL}?$format=xml`: [format=xml](../format=xml.md)
-        - `{URL}?$format=json`: [format=json](../format=json.md)
-        - `{URL}$metadata`: [metadata](../metadata.md)
+        - `{URL}?$format=xml`: [format=xml](format=xml.md)
+        - `{URL}?$format=json`: [format=json](format=json.md)
+        - `{URL}$metadata`: [metadata](metadata.md)
     5. **View Errors**: Use the service `/n/IWFND/ERROR_LOG`
 
 # Pulling Data
 
 1. **Initial Check**:
     - `{URL}POHeaderSet` (internal table)
-        - [Get before method implementation](../Get_before_method_implementation.md)
+        - [Get before method implementation](Get_before_method_implementation.md)
 2. **Implement Method**:
     - Navigate to `SEGW`
     - Right-click `Service Implementation/{POHeaderSet}`
-    - Click `Go to ABAP Workbench` and ![Validate](../images/Validate.png)
+    - Click `Go to ABAP Workbench` and ![Validate](images/Validate.png)
     - Right-click `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` and select `Redefine`
     - Save & Activate (F3)
     - **Test the Query Again**:
         - `{URL}POHeaderSet` (internal table)
-            - [Get after method implementation](../Get_after_method_implementation.md)
+            - [Get after method implementation](Get_after_method_implementation.md)
     - **Data Method Implementation**:
         - Add a method to pull data
         - Save & Activate
         - Test the query `{URL}POHeaderSet` again
-            - [Get after method implementation and populate table](../Get_after_method_implementation_and_populate_table.md)
+            - [Get after method implementation and populate table](Get_after_method_implementation_and_populate_table.md)
     - **Understand OData URL**:
-        - [OData URL](../OData_URL.md)
+        - [OData URL](OData_URL.md)
