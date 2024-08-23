@@ -1,0 +1,1 @@
+1. READ Operation (i.e. GET ENTITY method)
