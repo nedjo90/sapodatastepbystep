@@ -8,8 +8,8 @@ SELECT * UP TO 10 ROWS FROM ekko INTO CORRESPONDING FIELDS OF TABLE�
 Response:
 
 ```XML
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/">
-    <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet</id>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="{baseurl}">
+    <id>{baseurl}POHeaderSet</id>
     <title type="text">POHeaderSet</title>
     <updated>2024-08-23T09:44:26Z</updated>
     <author>
@@ -17,7 +17,7 @@ Response:
     </author>
     <link href="POHeaderSet" rel="self" title="POHeaderSet"/>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000000')</id>
+        <id>{baseurl}POHeaderSet('4500000000')</id>
         <title type="text">POHeaderSet('4500000000')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -37,7 +37,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000001')</id>
+        <id>{baseurl}POHeaderSet('4500000001')</id>
         <title type="text">POHeaderSet('4500000001')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -57,7 +57,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000002')</id>
+        <id>{baseurl}POHeaderSet('4500000002')</id>
         <title type="text">POHeaderSet('4500000002')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -77,7 +77,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000003')</id>
+        <id>{baseurl}POHeaderSet('4500000003')</id>
         <title type="text">POHeaderSet('4500000003')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -97,7 +97,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000004')</id>
+        <id>{baseurl}POHeaderSet('4500000004')</id>
         <title type="text">POHeaderSet('4500000004')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -117,7 +117,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000005')</id>
+        <id>{baseurl}POHeaderSet('4500000005')</id>
         <title type="text">POHeaderSet('4500000005')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -137,7 +137,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000006')</id>
+        <id>{baseurl}POHeaderSet('4500000006')</id>
         <title type="text">POHeaderSet('4500000006')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -157,7 +157,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000007')</id>
+        <id>{baseurl}POHeaderSet('4500000007')</id>
         <title type="text">POHeaderSet('4500000007')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -177,7 +177,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000008')</id>
+        <id>{baseurl}POHeaderSet('4500000008')</id>
         <title type="text">POHeaderSet('4500000008')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -197,7 +197,7 @@ Response:
         </content>
     </entry>
     <entry>
-        <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000009')</id>
+        <id>{baseurl}POHeaderSet('4500000009')</id>
         <title type="text">POHeaderSet('4500000009')</title>
         <updated>2024-08-23T09:44:26Z</updated>
         <category term="ZGW_SECOND_PO_NEHAN_SRV.POHeader" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
@@ -238,8 +238,8 @@ Response:
         "results": [
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000000')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000000')",
+                    "id": "{baseurl}POHeaderSet('4500000000')",
+                    "uri": "{baseurl}POHeaderSet('4500000000')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000000",
@@ -254,8 +254,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000001')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000001')",
+                    "id": "{baseurl}POHeaderSet('4500000001')",
+                    "uri": "{baseurl}POHeaderSet('4500000001')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000001",
@@ -270,8 +270,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000002')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000002')",
+                    "id": "{baseurl}POHeaderSet('4500000002')",
+                    "uri": "{baseurl}POHeaderSet('4500000002')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000002",
@@ -286,8 +286,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000003')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000003')",
+                    "id": "{baseurl}POHeaderSet('4500000003')",
+                    "uri": "{baseurl}POHeaderSet('4500000003')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000003",
@@ -302,8 +302,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000004')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000004')",
+                    "id": "{baseurl}POHeaderSet('4500000004')",
+                    "uri": "{baseurl}POHeaderSet('4500000004')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000004",
@@ -318,8 +318,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000005')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000005')",
+                    "id": "{baseurl}POHeaderSet('4500000005')",
+                    "uri": "{baseurl}POHeaderSet('4500000005')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000005",
@@ -334,8 +334,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000006')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000006')",
+                    "id": "{baseurl}POHeaderSet('4500000006')",
+                    "uri": "{baseurl}POHeaderSet('4500000006')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000006",
@@ -350,8 +350,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000007')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000007')",
+                    "id": "{baseurl}POHeaderSet('4500000007')",
+                    "uri": "{baseurl}POHeaderSet('4500000007')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000007",
@@ -366,8 +366,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000008')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000008')",
+                    "id": "{baseurl}POHeaderSet('4500000008')",
+                    "uri": "{baseurl}POHeaderSet('4500000008')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000008",
@@ -382,8 +382,8 @@ Response:
             },
             {
                 "__metadata": {
-                    "id": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000009')",
-                    "uri": "http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet('4500000009')",
+                    "id": "{baseurl}POHeaderSet('4500000009')",
+                    "uri": "{baseurl}POHeaderSet('4500000009')",
                     "type": "ZGW_SECOND_PO_NEHAN_SRV.POHeader"
                 },
                 "Ebeln": "4500000009",

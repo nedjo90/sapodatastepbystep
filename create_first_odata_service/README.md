@@ -75,15 +75,15 @@
         - In `SAP Gateway Client`, click `HTTP` to view the URL
             - Note: **CASE SENSITIVE**
     4. **Test URLs**:
-        - `{URL}?$format=xml`: [format=xml](format=xml.md)
-        - `{URL}?$format=json`: [format=json](format=json.md)
-        - `{URL}$metadata`: [metadata](metadata.md)
+        - `{baseurl}?$format=xml`: [format=xml](format=xml.md)
+        - `{baseurl}?$format=json`: [format=json](format=json.md)
+        - `{baseurl}$metadata`: [metadata](metadata.md)
     5. **View Errors**: Use the service `/n/IWFND/ERROR_LOG`
 
 # Pulling Data
 
 1. **Initial Check**:
-    - `{URL}POHeaderSet` (internal table)
+    - `{baseurl}POHeaderSet` (internal table)
         - [Get before method implementation](Get_before_method_implementation.md)
 2. **Implement Method**:
     - Navigate to `SEGW`
@@ -92,12 +92,12 @@
     - Right-click `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` and select `Redefine`
     - Save & Activate (F3)
     - **Test the Query Again**:
-        - `{URL}POHeaderSet` (internal table)
+        - `{baseurl}POHeaderSet` (internal table)
             - [Get after method implementation](Get_after_method_implementation.md)
     - **Data Method Implementation**:
         - Add a method to pull data
         - Save & Activate
-        - Test the query `{URL}POHeaderSet` again
+        - Test the query `{baseurl}POHeaderSet` again
             - [Get after method implementation and populate table](Get_after_method_implementation_and_populate_table.md)
     - **Understand OData URL**:
         - [OData URL](OData_URL.md)

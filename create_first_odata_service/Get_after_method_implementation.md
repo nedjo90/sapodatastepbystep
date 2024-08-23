@@ -1,9 +1,9 @@
 Response: 
 
 ```XML
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="{baseurl}">
 
-    <id>http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/POHeaderSet</id>
+    <id>{baseurl}POHeaderSet</id>
 
     <title type="text">POHeaderSet</title>
 

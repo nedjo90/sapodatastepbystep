@@ -40,8 +40,8 @@ Response like:
                 <EntitySet Name="POItemSet" EntityType="ZGW_SECOND_PO_NEHAN_SRV.POItem" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
             <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
-            <atom:link rel="self" href="http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
-            <atom:link rel="latest-version" href="http://s4h.net-portail.com:8000/sap/opu/odata/sap/ZGW_SECOND_PO_NEHAN_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="self" href="{baseurl}/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="{baseurl}/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
