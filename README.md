@@ -1,6 +1,6 @@
 # Summary
 
-[See my public postman workspace](https://www.postman.com/research-geologist-26756209/workspace/learn-odata-with-sap/request/37839180-e951e2c2-4ad7-47e8-8b71-11069368b2a7): fork it, fill the global variables in postman and test it !
+[See my public postman workspace](https://www.postman.com/research-geologist-26756209/workspace/learn-odata-with-sap/collection/37839180-2f2727cc-3e23-4633-99d6-ff96b517216b): fork it, fill the global variables in postman and test it !
 
 
 1. **[Introduction](Introduction.md)**: Gain an understanding of OData and its role in SAP environments.
