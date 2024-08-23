@@ -36,7 +36,7 @@
 				9. Select the `Is Key`
 				10. Hit `Finish`
 2. Implement / Register the Service
-	1. Hit ![[Generate Runtime Object.png]] (Generate Runtime Object) => Generation of the class for the :
+	1. Hit ![[Generate_Runtime_Object.png]] (Generate Runtime Object) => Generation of the class for the :
 		- MPC (Model Provider Class) => define the Gateway Service interface
 		- DPC (Data Provider Class) => provides the Gateway Service functionalities
 			=> MPC & DPC are not connected by any coding => talk via Configuration
