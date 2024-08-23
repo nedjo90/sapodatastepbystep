@@ -8,4 +8,5 @@
 3. **[Query Options in OData Service URI](Query_Options_in_OData_Service_URI)**: Learn about query options you can use in the OData service URI to filter, sort, and manipulate data retrieval.
 
 
-# RESOURCE => [Zapyard](https://www.zapyard.com/) <= HIGHLY RECOMMANDED
+# RESOURCES
+ [Zapyard](https://www.zapyard.com/) (HIGHLY RECOMMANDED)
