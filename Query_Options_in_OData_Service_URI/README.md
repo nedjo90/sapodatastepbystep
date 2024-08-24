@@ -11,5 +11,5 @@
             1. `URL = {basurl}{endpoint}('{parameter}')`
          8. Test in JSON
             1. 1. `URL = {basurl}{endpoint}('{parameter}')?$format=json`
-         9.  See [For example](./ABAP_POHEADERSET_GET_ENTITY)
+         9.  See [For example](./ABAP_POHEADERSET_GET_ENTITY.md)
         
