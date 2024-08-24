@@ -89,7 +89,7 @@
     - Navigate to `SEGW`
     - Right-click `Service Implementation/{POHeaderSet}`
     - Click `Go to ABAP Workbench` and ![Validate](images/Validate.png)
-    - Right-click `{project_name_DPC_EXT}/Methods/Inherited Methods/{service}_GET_ENTITYSET` and select `Redefine`
+    - Right-click `{project_name_DPC_EXT}/Methods/Inherited Methods/{entity}_GET_ENTITYSET` and select `Redefine`
     - Save & Activate (F3)
     - **Test the Query Again**:
         - `{baseurl}POHeaderSet` (internal table)
