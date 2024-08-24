@@ -1,6 +1,6 @@
 # Summary
 
-[See my public postman workspace](https://www.postman.com/research-geologist-26756209/workspace/learn-odata-with-sap/collection): fork it, fill the global variables in postman and test it !
+[See my public postman workspace](https://www.postman.com/research-geologist-26756209/workspace/learn-odata-with-sap/collection): fork it, fill the global variables in postman and test it ! (don't forget to fill global variables: sapusername/sappassword/baseurl)
 
 
 1. **[Introduction](Introduction.md)**
