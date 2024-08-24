@@ -29,3 +29,4 @@
    2. Test it: [for example](./ABAP_POHEADERSET_GET_ENTITY_SOME_FIELDS.md)
    3. In JSON:
       1. `URL = {basurl}{endpoint}?$select=Field1,Field2,Field3&$format=json`
+5. [Understand importing parameter with IT_KEY_TAB](./Importing_parameter_with_IT_KEY_TAB.md)
