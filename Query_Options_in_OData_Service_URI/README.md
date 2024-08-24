@@ -10,5 +10,6 @@
          7. Test it with postman, sap client or browser
             1. `URL = {basurl}{endpoint}('{parameter}')`
          8. Test in JSON
-         9. See [For example](./ABAP_POHEADERSET_GET_ENTITY)
+            1. 1. `URL = {basurl}{endpoint}('{parameter}')?$format=json`
+         9.  See [For example](./ABAP_POHEADERSET_GET_ENTITY)
         
