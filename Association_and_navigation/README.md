@@ -27,4 +27,4 @@ Create Assocition & Navigation:
    5. Test to query POHeader to see additional links: [Query option with Navigation Property](./query_option_with_navigation_property.md)
    6. Test the query with navigation property: [See example](./query_option_with_navigation_property.md/#test-of-query-option-with-navigation-property)
       1. `URL = {baseurl}/{endpoint}('{paramter}')/{navigationproperty}` 
-   7. Test with expand option 
+   7. Test with expand option which give you the header data: [For example](./query_option_with_navigation_property.md/#test-with-expand-option)
