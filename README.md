@@ -7,6 +7,7 @@
 2. **[Create Your First OData Service](create_first_odata_service)**
 3. **[Query Options in OData Service URI](Query_Options_in_OData_Service_URI)**
 4. **[Association and navigation in OData Service](Association_and_navigation)**
+5. **[CRUD Operations in OData Service](CRUD_operations)**
 
 
 # RESOURCES
